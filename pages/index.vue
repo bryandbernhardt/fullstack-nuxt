@@ -14,7 +14,7 @@ const charizard = await useFetch('https://pokeapi.co/api/v2/pokemon/charizard');
 
 <template>
   <h1>Home Page for Nuxt 3 Server Course</h1>
-  {{ charizard }}
+  <pre>{{ charizard }}</pre>
 </template>
 
 <style scoped>
