@@ -1,6 +1,6 @@
-# Nuxt 3 Minimal Starter
+# Fullstack w/ Nuxt Nitro
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Repository for the "Fullstack w/ Nuxt Nitro" Vue Mastery course to create a full stack Vue3/Nuxt project, using Nuxt's Nitro to do the server parts.
 
 ## Setup
 
