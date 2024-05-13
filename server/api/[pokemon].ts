@@ -1,4 +1,5 @@
 export default defineEventHandler(async event => {
+  try {
     const { pokemon } = event.context.params;
 
     // server-side = $fetch
@@ -9,10 +10,16 @@ export default defineEventHandler(async event => {
     // console.log(response);
 
     const formattedResponse = {
-        id: response.id,
-        name: response.name,
-        sprite: response.sprites.front_default
+      id: response.id,
+      name: response.name,
+      sprite: response.sprites.front_default
     }
 
     return formattedResponse;
+  } catch (e) {
+    throw createError({
+      statusCode: 404,
+      message: "Can't find Pokemon.",
+    });
+  }
 })
