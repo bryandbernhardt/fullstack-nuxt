@@ -1,4 +1,5 @@
 <script setup lang="ts">
+// for more safety and security, consider using localStorage
 const auth = useCookie('pokemon-auth');
 
 function authenticate() {
