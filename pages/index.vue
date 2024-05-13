@@ -11,7 +11,7 @@
 // Nuxt compact pattern for fetch API in client
 // const charizard = await useFetch('https://pokeapi.co/api/v2/pokemon/charizard');
 
-const { data: charizard, error } = await useFetch('/api/newmew');
+const { data: charizard, error } = await useFetch('/api/charizard');
 </script>
 
 <template>
